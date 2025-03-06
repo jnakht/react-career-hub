@@ -7,7 +7,9 @@ const Root = () => {
     return (
         <div>
             <Header></Header>
-            <Outlet></Outlet>
+            <div className="w-[80%] border-2 border-red-500 mx-auto">
+                <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );

@@ -5,15 +5,15 @@ const Job = ({ job }) => {
     const { id, logo, company_name, job_title, remote_or_onsite, location, job_type, salary, job_description, job_responsibility
     } = job;
     return (
-        <div className="border border-solid border-[#E8E8E8] rounded-[8px]  h-[392px]">
+        <div className="border border-solid border-[#E8E8E8] rounded-[8px]  p-10 h-[392px]">
             <img src={logo} className="w-[116px] h-[40px]" alt="" />
-            <h2 className="text-[#474747] text-2xl font-extrabold">{job_title}</h2>
-            <p className="text-[#757575] text-xl font-semibold">{company_name}</p>
-            <div className="flex gap-4">
+            <h2 className="text-[#474747] text-2xl font-extrabold mt-8">{job_title}</h2>
+            <p className="text-[#757575] text-xl font-semibold mt-2">{company_name}</p>
+            <div className="flex gap-4 mt-4">
                 <button className="btn text-base font-extrabold rounded px-5 py-2 text-[#9873FF]">{remote_or_onsite}</button>
                 <button className="btn text-base font-extrabold rounded px-5 py-2 text-[#9873FF]">{job_type}</button>
             </div>
-            <div className="flex gap-6">
+            <div className="flex gap-6 mt-4 ">
                 <div className="flex gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5Z" stroke="#757575" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -26,7 +26,7 @@ const Job = ({ job }) => {
                     </svg> <p>Salary: {salary}</p>
                 </div>
             </div>
-            <button className="btn px-4 py-3 text-[#FFF] text-xl font-extrabold bg-[#9873FF]">View Details</button>
+            <button className="btn px-4 py-3 text-[#FFF] text-xl font-extrabold bg-[#9873FF] mt-6">View Details</button>
         </div>
     );
 };
