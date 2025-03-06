@@ -6,7 +6,7 @@ import JobCategoryList from "../JobCategoryList/JobCategoryList";
 
 const Home = () => {
     return (
-        <div className="text-center h-[600px] flex flex-col justify-center items-center">
+        <div className="text-center  flex flex-col justify-center items-center">
             <h2>This is home</h2>
             <Banner></Banner>
             <JobCategoryList></JobCategoryList>

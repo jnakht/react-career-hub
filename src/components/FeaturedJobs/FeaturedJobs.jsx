@@ -10,7 +10,7 @@ const FeaturedJobs = () => {
         .then(data => setJobs(data))
     } ,[])
     return (
-        <div>
+        <div className="grid grid-cols-2 gap-6">
             {
                 jobs.map(job => <Job job={job}></Job>)
             }
