@@ -9,7 +9,7 @@ const AppliedJobs = () => {
     // id stored on local storage
     const ids = getApplicants();
     useEffect( () => {
-        const appliedJobs = allJobs.map(job => {
+        const appliedJobs = allJobs.filter(job => {
             if(ids.includes(job.id)) return job;
         })
         console.log('these are the applied jobs: ', appliedJobs)
