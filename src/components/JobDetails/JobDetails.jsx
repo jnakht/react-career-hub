@@ -50,6 +50,7 @@ const JobDetails = () => {
                              <p className="paragraph">{contact_information.address}</p>
                         </div>
                     </div>
+                    <button className="btn btn-primary w-full">Apply Now</button>
                 </div>
             </div>
         </div>
