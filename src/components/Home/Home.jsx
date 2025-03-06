@@ -1,9 +1,11 @@
+import Banner from "../Banner/Banner";
 
 
 const Home = () => {
     return (
-        <div>
+        <div className="text-center h-[600px] flex flex-col justify-center items-center">
             <h2>This is home</h2>
+            <Banner></Banner>
         </div>
     );
 };
