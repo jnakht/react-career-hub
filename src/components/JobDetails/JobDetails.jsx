@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import './JobDetails.css'
 import { ToastContainer, toast } from 'react-toastify';
+import { setApplicants } from "../Utility/Utility";
 const JobDetails = () => {
     const jobs = useLoaderData();
     const id = useParams();
@@ -9,6 +10,8 @@ const JobDetails = () => {
     const {job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information} = clickedJob;
 
     const handleApplyNow = () => {
+        setApplicants(idInt);
+        console.log(idInt)
         toast('applied successfully');
     }
     return (
