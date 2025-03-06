@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Job = ({ job }) => {
@@ -26,7 +27,9 @@ const Job = ({ job }) => {
                     </svg> <p>Salary: {salary}</p>
                 </div>
             </div>
-            <button className="btn px-4 py-3 text-[#FFF] text-xl font-extrabold bg-[#9873FF] mt-6">View Details</button>
+            <Link to={`/job/${id}`}>
+                 <button className="btn px-4 py-3 text-[#FFF] text-xl font-extrabold bg-[#9873FF] mt-6">View Details</button>
+            </Link>
         </div>
     );
 };
